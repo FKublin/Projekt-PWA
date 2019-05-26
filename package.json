@@ -1,0 +1,20 @@
+{
+  "name": "projekt-pum",
+  "version": "1.0.0",
+  "description": "Projekt PUM",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "keywords": [
+    "pwa",
+    "progressive",
+    "web",
+    "app"
+  ],
+  "author": "Sekcja 4",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
