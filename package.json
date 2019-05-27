@@ -7,10 +7,7 @@
     "start": "http-server -c-1"
   },
   "keywords": [
-    "pwa",
-    "progressive",
-    "web",
-    "app"
+    "pwa"
   ],
   "author": "Sekcja 4",
   "license": "ISC",
