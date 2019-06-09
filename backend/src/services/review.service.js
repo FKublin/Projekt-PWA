@@ -1,7 +1,7 @@
 const Review = require('../entities/review');
 
 exports.getAllReviews = async (req, res) => {
-    const reviews = await Review.find({})
+    const reviews = await Review.find({}).sort({createdAt: -1})
     return res.json(reviews)
 }
 
@@ -14,6 +14,7 @@ exports.addReview = async (req, res) => {
         availabilityRating: req.body.priceRating,
     })
 
-    await Review.create(newReview)
-    return res.json(newReview)
+    await newReview.save()
+    const reviews = await Review.find({}).sort({createdAt: -1})
+    return res.json(reviews)
 }
