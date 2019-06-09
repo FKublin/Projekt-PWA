@@ -1,7 +1,7 @@
 const Review = require('./entities/review')
 
 exports.seedDatabase = async function() {
-    console.log("SEED ON KURWA")
+    console.log("SEED")
     const reviews = createReviews()
 
     await Review.create(reviews);

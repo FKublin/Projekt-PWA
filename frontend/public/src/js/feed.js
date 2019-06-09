@@ -38,6 +38,7 @@ console.log(values)
 
 axios.post('http://localhost:3000/review/add', values)
 .then(function (response) {
+  document.getElementById('shared-moments').innerHTML = "";
   closeCreatePostModal()
    createCard(response.data);
 })
@@ -87,7 +88,7 @@ function createCard(data) {
     cardWrapper.className = 'shared-moment-card mdl-card mdl-shadow--2dp';
     var cardTitle = document.createElement('div');
     cardTitle.className = 'mdl-card__title';
-    cardTitle.style.backgroundImage = 'url("/src/images/sf-boat.jpg")';
+    //cardTitle.style.backgroundImage = 'url("/src/images/sf-boat.jpg")';
     cardTitle.style.backgroundSize = 'cover';
     cardTitle.style.height = '180px';
     cardWrapper.appendChild(cardTitle);
@@ -98,6 +99,7 @@ function createCard(data) {
     var cardSupportingText = document.createElement('div');
     cardSupportingText.className = 'mdl-card__supporting-text';
     cardSupportingText.textContent = data.description;
+    
     cardSupportingText.style.textAlign = 'center';
     cardWrapper.appendChild(cardSupportingText);
     componentHandler.upgradeElement(cardWrapper);
