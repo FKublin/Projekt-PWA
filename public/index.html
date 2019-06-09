@@ -86,52 +86,53 @@
 
           <div>
             <h5 class="text mdl-color-text--primary">Cena</h5>
-            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-              <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-6">
+              <input type="radio" id="option-6" class="mdl-radio__button" name="options_price" value="1" checked>
               <span class="mdl-radio__label">1</span>
             </label>
-            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-              <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-7">
+              <input type="radio" id="option-7" class="mdl-radio__button" name="options_price" value="2">
               <span class="mdl-radio__label">2</span>
             </label>
-            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
-                <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="3">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-8">
+                <input type="radio" id="option-8" class="mdl-radio__button" name="options_price" value="3">
                 <span class="mdl-radio__label">3</span>
               </label>
-              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
-                  <input type="radio" id="option-4" class="mdl-radio__button" name="options" value="4">
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-9">
+                  <input type="radio" id="option-9" class="mdl-radio__button" name="options_price" value="4">
                   <span class="mdl-radio__label">4</span>
                 </label>
-                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
-                    <input type="radio" id="option-5" class="mdl-radio__button" name="options" value="5">
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-10">
+                    <input type="radio" id="option-10" class="mdl-radio__button" name="options_price" value="5">
                     <span class="mdl-radio__label">5</span>
                   </label>
           </div>
+
           <br>
           <div>
             <h5 class="text mdl-color-text--primary">Dostępność</h5>
-            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-              <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-11">
+              <input type="radio" id="option-11" class="mdl-radio__button" name="options_available" value="1" checked>
               <span class="mdl-radio__label">1</span>
             </label>
-            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-              <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-12">
+              <input type="radio" id="option-12" class="mdl-radio__button" name="options_available" value="2">
               <span class="mdl-radio__label">2</span>
             </label>
-            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
-                <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="3">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-13">
+                <input type="radio" id="option-13" class="mdl-radio__button" name="options_available" value="3">
                 <span class="mdl-radio__label">3</span>
               </label>
-              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
-                  <input type="radio" id="option-4" class="mdl-radio__button" name="options" value="4">
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-14">
+                  <input type="radio" id="option-14" class="mdl-radio__button" name="options_available" value="4">
                   <span class="mdl-radio__label">4</span>
                 </label>
-                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
-                    <input type="radio" id="option-5" class="mdl-radio__button" name="options" value="5">
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-15">
+                    <input type="radio" id="option-15" class="mdl-radio__button" name="options_available" value="5">
                     <span class="mdl-radio__label">5</span>
                   </label>
           </div>
-          <br>
+          
 
           <div>
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent"
@@ -149,7 +150,70 @@
       
       <div class="page-content">
         <h5 class="text-center mdl-color-text--primary">Podziel się opinią</h5>
-        <div id="shared-moments"></div>
+        <div id="shared-moments">
+
+
+  <!-- Event card -->
+<!-- <style>
+    .demo-card-event.mdl-card {
+      width: 256px;
+      height: 256px;
+      background: #3E4EB8;
+    }
+    .demo-card-event > .mdl-card__actions {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .demo-card-event > .mdl-card__title {
+      align-items: flex-start;
+    }
+    .demo-card-event > .mdl-card__title > h4 {
+      margin-top: 0;
+    }
+    .demo-card-event > .mdl-card__actions {
+      display: flex;
+      box-sizing:border-box;
+      align-items: center;
+    }
+    .demo-card-event > .mdl-card__actions > .material-icons {
+      padding-right: 10px;
+    }
+    .demo-card-event > .mdl-card__title,
+    .demo-card-event > .mdl-card__actions,
+    .demo-card-event > .mdl-card__actions > .mdl-button {
+      color: #fff;
+    }
+    </style> -->
+    
+    <div class="demo-card-event mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title mdl-card--expand">
+        <h4>
+          Nazwa
+        </h4>
+      </div>
+      <div class="mdl-card__title mdl-card--expand">
+          <h4>
+            Opis
+          </h4>
+        </div>
+        <div class="mdl-card__title mdl-card--expand">
+            <h4>
+              Smak / Cena / Dostępność
+            </h4>
+          </div>
+     
+      <!-- <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Add to Calendar
+        </a>
+        <div class="mdl-layout-spacer"></div>
+        <i class="material-icons">event</i>
+      </div> -->
+    </div>
+  </div>
+  </br>
+
+
+        </div>
       </div>
       <div class="floating-button">
         <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
