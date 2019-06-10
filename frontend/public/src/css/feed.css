@@ -11,12 +11,6 @@
   display: none;
 }
 
-.main-image {
-  max-width: 100%;
-  margin: auto;
-  display: block;
-}
-
 .floating-button {
   z-index: 1000;
   position: fixed;
@@ -29,6 +23,14 @@
   display: block;
   margin: 10px auto;
 }
+
+/* .main-image {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+
 
 .demo-card-event.mdl-card {
   width: 256px;
@@ -57,4 +59,4 @@
 .demo-card-event > .mdl-card__actions,
 .demo-card-event > .mdl-card__actions > .mdl-button {
   color: #fff;
-}
+} */
